@@ -190,7 +190,7 @@ void RainClouds::initGame()
 	upper->getPhysicsBody()->setDynamic(true);
 	this->addChild(upper, Z_EFFECT);
 
-	auto lower = makeBorder(Point(winSize.width / 2, 0-BORDER_Y/2));
+	auto lower = makeBorder(Point(winSize.width / 2, 0-BORDER_Y/2-10));
 	lower->setTag(TAG_LOWER);
 	lower->getPhysicsBody()->setDynamic(true);
 	this->addChild(lower, Z_EFFECT);
